@@ -20,24 +20,23 @@
               "icon": "lucide-file",
               "title": "Bienvenido"
             }
-          }
-        ]
-      },
-      {
-        "id": "3797e689c6a8c883",
-        "type": "tabs",
-        "children": [
+          },
           {
-            "id": "3905a8cfd7ad531b",
+            "id": "b016921b0a49a067",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Vista gráfica"
+              "type": "markdown",
+              "state": {
+                "file": "API REST.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "API REST"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -115,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Bienvenido.md",
+                "file": "API REST.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -134,7 +133,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Bienvenido.md",
+                "file": "API REST.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -177,7 +176,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Bienvenido.md",
+                "file": "API REST.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -204,8 +203,9 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "5e483107deaa827f",
+  "active": "b016921b0a49a067",
   "lastOpenFiles": [
+    "API REST.md",
     "Bienvenido.md"
   ]
 }
