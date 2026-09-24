@@ -1,3 +1,6 @@
 [submodule "parcial-1/Tema3_catalogo-musical-api"]
 	path = parcial-1/Tema3_catalogo-musical-api
 	url = git@github.com:ManuelRuizJ/catalogo-musica-api.git
+[submodule "parcial-1/parcial-1/Tema3_flask"]
+	path = parcial-1/parcial-1/Tema3_flask
+	url = git@github.com:ManuelRuizJ/catalogo-musica-api.git
