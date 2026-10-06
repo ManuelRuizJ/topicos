@@ -1,0 +1,61 @@
+<!-- catalogo/templates/catalogo/lista.html -->
+{% extends "catalogo/base.html" %}
+{% block contenido %}
+<form method="get">
+    <input
+        type="text"
+        name="q"
+        value="{{ q }}"
+        placeholder="Título o artista">
+    <button type="submit">Buscar</button>
+
+    <input
+        type="text"
+        name="genero"
+        value="{{ genero }}"
+        placeholder="Género">
+    <button type="submit">Buscar</button>
+</form>
+<p>{{ total }} resultados.</p>
+
+<table>
+    <tr>
+        <th>Título</th>
+        <th>Artista</th>
+        <th>Duración</th>
+        <th>Popularidad</th>
+        <th>Playlist</th>
+    </tr>
+    {% for c in page_obj %}
+    <tr>
+        <td>
+            <a href="{% url 'catalogo:detalle' c.pk %}">{{ c.titulo }}</a>
+        </td>
+        <td><a href="?artista={{ c.artista|urlencode }}">{{ c.artista }}</a></td>
+        <td>{{ c.duracion }}</td>
+        <td>{{ c.popularidad }}</td>
+        <td>
+            {% for playlist in c.playlists.all %}
+                {{ playlist.nombre }}{% if not forloop.last %}, {% endif %}
+            {% empty %}
+                Sin playlist
+            {% endfor %}
+        </td>
+    </tr>
+    {% empty %}
+    <tr>
+        <td colspan="5">No hay canciones que coincidan.</td>
+    </tr>
+    {% endfor %}
+</table>
+
+
+<p>Página {{ page_obj.number }} de {{ page_obj.paginator.num_pages }}</p>
+{% if page_obj.has_previous %}
+    <a href="?q={{ q|urlencode }}&genero={{ genero|urlencode }}&artista={{ artista|urlencode }}&page={{ page_obj.previous_page_number }}">Anterior</a>
+{% endif %}
+{% if page_obj.has_previous and page_obj.has_next %} | {% endif %}
+{% if page_obj.has_next %}
+    <a href="?q={{ q|urlencode }}&genero={{ genero|urlencode }}&artista={{ artista|urlencode }}&page={{ page_obj.next_page_number }}">Siguiente</a>
+{% endif %}
+{% endblock %}
