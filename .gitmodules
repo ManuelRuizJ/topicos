@@ -7,3 +7,6 @@
 [submodule "parcial-2/expo-evaluacion"]
 	path = parcial-2/expo-evaluacion
 	url = https://github.com/ManuelRUizJ/expo-evaluacion.git
+[submodule "parcial-2/expo-fastapi"]
+	path = parcial-2/expo-fastapi
+	url = https://github.com/ManuelRUizJ/expo-FastAPI.git
