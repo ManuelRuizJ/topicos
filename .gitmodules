@@ -13,3 +13,6 @@
 [submodule "parcial-2/examen2"]
 	path = parcial-2/examen2
 	url = https://github.com/ManuelRuizJ/examen2-gimnasio-jesus-ruiz-.git
+[submodule "parcial-3/expo-fastapi"]
+	path = parcial-3/expo-fastapi
+	url = https://github.com/ManuelRuizJ/expo-FastAPI.git
