@@ -34,22 +34,9 @@
               "icon": "lucide-file",
               "title": "API REST"
             }
-          },
-          {
-            "id": "18b82bf09aa24255",
-            "type": "leaf",
-            "state": {
-              "type": "bases",
-              "state": {
-                "file": "Sin título.base",
-                "viewName": "Vista"
-              },
-              "icon": "lucide-table",
-              "title": "Sin título"
-            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -216,10 +203,11 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "18b82bf09aa24255",
+  "active": "b016921b0a49a067",
   "lastOpenFiles": [
-    "Detalles.md",
+    "file:/home/jesus/Documentos/universidad/agentes/parcial-3/agente_carga2/agente_carga/README.md",
     "Sin título.base",
+    "Detalles.md",
     "Sin título.canvas",
     "Sin título.md",
     "API REST.md",
