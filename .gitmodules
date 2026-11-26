@@ -13,3 +13,7 @@
 [submodule "parcial-3/expo-fastapi"]
 	path = parcial-3/expo-fastapi
 	url = https://github.com/ManuelRuizJ/expo-FastAPI.git
+[submodule "parcial-3/solven"]
+	path = parcial-3/solven
+	url = https://github.com/ManuelRuizJ/SOLVEN.git
+	branch = feature/modelos
